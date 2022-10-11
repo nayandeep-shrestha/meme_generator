@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 
 export const Form = () => {
     const [meme, setMeme]= useState({
-        upperText:"",
+        topText:"",
         bottomText:"",
         randomImg:"http://i.imgflip.com/1bij.jpg",
     })
@@ -40,9 +40,9 @@ export const Form = () => {
         <div className="form">
             <input 
                 type="text"
-                placeholder="Upper Text" 
+                placeholder="Top Text" 
                 className="form-input"
-                name="upperText"
+                name="topText"
                 value={meme.upperText}
                 onChange={handleChange}
             />
